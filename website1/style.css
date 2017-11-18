@@ -1,0 +1,80 @@
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.table1 {
+  border: 1px solid blue;
+  background: rgb(203, 239, 248);
+  height: 20px;
+  width: 100%;
+  padding: 10px;
+}
+
+.table2 {
+  background: rgb(221, 221, 221);
+  text-align: center;
+  position: center;
+  margin: 30px 0px 0px 0px;
+  width: 95%;
+}
+
+.circle {
+  background-color: green;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 3px solid black;
+}
+
+.square {
+  background-color: purple;
+  width: 200px;
+  height: 200px;
+  border: 3px solid black;
+}
+
+.image {
+  border: 3px solid blue;
+  width: 200px;
+  height: 200px;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  margin: 0px;
+}
+
+.column-alt {
+  float: left;
+  width: 33.33%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media (max-width: 600px) {
+  .column,
+  .column-alt {
+      width: 100%;
+  }
+}
+
+.grid {
+  margin: 0% 10% 2% 10%;
+}
