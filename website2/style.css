@@ -50,6 +50,7 @@ width: 75%;
   display: table;
   clear: both;
 }
+
 @media (max-width: 600px) {
   .column,
   .column-alt {

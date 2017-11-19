@@ -1,65 +1,55 @@
-*,
-*:before,
-*:after {
+* {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-h1 {
+h1, h3 {
   text-align: center;
 }
 
-.bold {
-  font-weight: bold;
+.grid {
+  margin: 0px 0px 0px 80px;
+  position: center;
 }
 
+/* -- Top Bar --*/
+
 .table1 {
-  border: 1px solid blue;
-  background: rgb(203, 239, 248);
+  background: rgb(253, 251, 253);
   height: 20px;
   width: 100%;
-  padding: 10px;
 }
+
+.col-3-1 {
+  float: left;
+  padding: 10px;
+  width: 33.33%;
+  border: 1px solid blue;
+}
+
+/* -- Chart -- */
 
 .table2 {
   background: rgb(221, 221, 221);
   text-align: center;
   position: center;
-  margin: 30px 0px 0px 0px;
-  width: 95%;
+  margin: 30px 0px 0px 100px;
+  width: 85%;
 }
 
-.circle {
-  background-color: green;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  border: 3px solid black;
-}
+/* -- Lists Section -- */
 
-.square {
-  background-color: purple;
-  width: 200px;
-  height: 200px;
-  border: 3px solid black;
-}
-
-.image {
-  border: 3px solid blue;
-  width: 200px;
-  height: 200px;
-}
-
-.column {
+.col-2{
   float: left;
+  padding: 15px;
   width: 50%;
-  padding: 10px;
-  margin: 0px;
 }
 
-.column-alt {
+/* -- Random Objects -- */
+.col-3 {
   float: left;
+  padding: 15px;
   width: 33.33%;
 }
 
@@ -69,12 +59,35 @@ h1 {
   clear: both;
 }
 @media (max-width: 600px) {
-  .column,
-  .column-alt {
+  .col-3,
+  .col-3-1,
+  .col-2,
+  .table1,
+  .table2 {
       width: 100%;
   }
 }
 
-.grid {
-  margin: 0% 10% 2% 10%;
+.circle {
+  background-color: green;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 3px solid black;
+  margin: 30px;
+}
+
+.square {
+  background-color: purple;
+  width: 200px;
+  height: 200px;
+  border: 3px solid black;
+  margin: 30px;
+}
+
+.image {
+  border: 3px solid blue;
+  width: 200;
+  height: 200px;
+  margin: 30px;
 }
